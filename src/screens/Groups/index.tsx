@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { FlatList } from "react-native";
 import { useFocusEffect, useNavigation } from "@react-navigation/native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { StatusBar } from "expo-status-bar";
 
 import { Header } from "../../components/Header";
@@ -10,9 +11,9 @@ import { ListEmpty } from "../../components/ListEmpty";
 import { Button } from "../../components/Button";
 
 import { Container } from "./styles";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import { GROUP_COLLLECTION } from "../../../storage/storageConfig";
 import { groupsGetAll } from "../../../storage/group/groupsGetAll";
+
 export function Groups() {
   const navigation = useNavigation();
 

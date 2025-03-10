@@ -1,3 +1,3 @@
 const GROUP_COLLLECTION = "@igteams:groups";
-
-export { GROUP_COLLLECTION };
+const PLAYER_COLLECTION = "@igteams:players";
+export { GROUP_COLLLECTION, PLAYER_COLLECTION };
